@@ -243,9 +243,10 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  width: 40rem;
+  width: 60rem;
   margin-right: auto;
   margin-left: auto;
+  padding-bottom: 30px;
 }
 
 .main-button {
@@ -426,6 +427,7 @@ img {
   color: var(--gray-color);
 }
 
+
 .social-links-itemsvg {
   fill: #afb1b8;
   display: flex;
@@ -434,7 +436,7 @@ img {
   background-color: var(--white-color);
   border-radius: 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -642,6 +644,21 @@ img {
   padding-bottom: 94px;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-list-item {
+  width: 370px;
+  height: 404px;
+  background: var(--white-color);
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+}
+
 .portfolio-description {
   background: var(--white-color);
   border: 1px solid var(--border-color-port);
@@ -668,31 +685,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--gray-color);
 }
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-
-.project-list-item:not(:last-child) {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.portfilio-link::after {
-  content: "";
-  display: block;
-  height: 4px;
-  width: 58px;
-  border-radius: 2px;
-  position: absolute;
-  left: 0;
-  top: 47px;
-  background-color: var(--main-color);
-  }
 
 .portfolio-list-item:first-child,
 .portfolio-list-item:nth-child(2),

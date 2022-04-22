@@ -647,7 +647,7 @@ img {
     
   .portfolio-description {
     background: var(--white-color);
-    border: 1px solid #eeeeee;
+    border: 1px solid var(--border-color-port);
   }
   
   .portfolio-description h3 {
@@ -678,14 +678,15 @@ img {
     justify-content: center;
     align-items: center;
   }
-  .portfolio-list-item{
-    margin-right: 15px;
-    margin-left: 15px;
-    padding-bottom: 30px;
-    
+
+  .project-list-item {
+    width: 370px;
+    height: 404px;
+    background: var(--white-color);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
   }
-  
-  
+    
   .portfolio-list-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -696,6 +697,29 @@ img {
   .project-list-item:not(:last-child) {
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+  .portfolio-list-item:first-child,
+  .portfolio-list-item:nth-child(2),
+  .portfolio-list-item:nth-child(4),
+  .portfolio-list-item:nth-child(5),
+  .portfolio-list-item:nth-child(7),
+  .portfolio-list-item:nth-child(8) {
+    margin-right: 42px;
+  }
+  
+  .portfolio-list-item:first-child,
+  .portfolio-list-item:nth-child(2),
+  .portfolio-list-item:nth-child(3),
+  .portfolio-list-item:nth-child(4),
+  .portfolio-list-item:nth-child(5),
+  .portfolio-list-item:nth-child(6) {
+    margin-bottom: 42px;
+  }
+  
+  .portfolio-list-item:nth-child(7),
+  .portfolio-list-item:nth-child(8),
+  .portfolio-list-item:last-child {
+    margin-bottom: 94px;
   }
 
 
